@@ -1,0 +1,30 @@
+.columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  min-height: 400px;
+}
+
+.column h2 {
+  text-align: center;
+}
+
+.unknown {
+  background-color: #ffe0e0;
+}
+
+.center {
+  background-color: #e0f7fa;
+}
+
+.known {
+  background-color: #e0ffe0;
+}

@@ -17,13 +17,13 @@ describe('AppComponent', () => {
   it(`should have the 'english-card-game' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('english-card-game');
+    expect(app.title).toEqual('english-card');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, english-card-game');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, english-card');
   });
 });

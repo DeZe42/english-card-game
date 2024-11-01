@@ -1,0 +1,12 @@
+<div class="card" [class.is-flipped]="card.isFlipped" (click)="flipCard()">
+  @if (!card.isFlipped) {
+    <div class="card-face front">
+      {{ card.englishText }}
+    </div>
+  }
+  @if (card.isFlipped) {
+    <div class="card-face back">
+      {{ card.hungarianText }}
+    </div>
+  }
+</div>
