@@ -23,11 +23,23 @@ export class AppComponent implements OnInit {
   centerCards: Card[] = [];
   knownCards: Card[] = [];
   unknownCards: Card[] = [];
+  isEnglishFirst = true;
 
   constructor(private cardService: CardService) {}
 
   ngOnInit(): void {
     this.centerCards = this.cardService.getCards();
+  }
+
+  toggleCardLanguage(): void {
+    this.isEnglishFirst = !this.isEnglishFirst;
+    this.updateCardsLanguage();
+  }
+
+  updateCardsLanguage(): void {
+    this.centerCards.forEach(card => card.isFlipped = !this.isEnglishFirst);
+    this.knownCards.forEach(card => card.isFlipped = !this.isEnglishFirst);
+    this.unknownCards.forEach(card => card.isFlipped = !this.isEnglishFirst);
   }
 
   drop(event: CdkDragDrop<Card[]>) {
