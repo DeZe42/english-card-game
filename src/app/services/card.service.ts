@@ -22,6 +22,8 @@ export class CardService {
       { id: 15, englishText: 'MAY/ MIGHT + V1', hungarianText: 'lehet, hogy… (bizonytalan)', isFlipped: false },
       { id: 16, englishText: 'MAY/ MIGHT HAVE + V3', hungarianText: 'lehet, hogy… (bizonytalan)', isFlipped: false },
       { id: 17, englishText: 'MUST + V1', hungarianText: 'bizonyára (biztos)', isFlipped: false },
+      { id: 17, englishText: `DON'T HAVE TO/NEED TO`, hungarianText: 'nem kell', isFlipped: false },
+      { id: 17, englishText: `DIDN'T HAVE TO/NEED TO`, hungarianText: 'nem kellett', isFlipped: false },
     ];
   }
 }
